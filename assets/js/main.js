@@ -48,6 +48,19 @@
     siteIstotope();
   });
 
+  let mainSlider = function() {
+    $('#slider').owlCarousel({
+      center: true,
+      items: 1,
+      loop: true,
+      margin: 0,
+      autoplay: true,
+      smartSpeed: 1000,
+      autoplayTimeout: 3500
+    });
+  };
+  mainSlider();
+
   var siteOwlCarousel = function() {
     $('.testimonial-carousel').owlCarousel({
       center: true,

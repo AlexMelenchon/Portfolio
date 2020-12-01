@@ -8,6 +8,10 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Inconsolata", monosapce;
   color: #0d1e2d;
@@ -264,6 +268,11 @@ h1, h2, h3, h4, h5, h6, .font-heading {
   border-radius: 0;
 }
 
+.bullet-points {
+  display: flex;
+  flex-direction: column;
+}
+
 .custom-progress .progress-bar {
   background: #000;
 }
@@ -473,15 +482,18 @@ h1, h2, h3, h4, h5, h6, .font-heading {
 # Footer
 --------------------------------------------------------------*/
 .footer {
-  padding: 0 0 4rem 0;
+  background-color: black;
+  padding: 30px 0 30px 0;
+  color: #fff;
 }
 
 .footer a {
-  color: #000;
+  color: #fff;
 }
 
 .social a {
   display: inline-block;
+  margin-right: 8px;
   width: 50px;
   height: 50px;
   border-radius: 50%;
@@ -491,14 +503,62 @@ h1, h2, h3, h4, h5, h6, .font-heading {
   color: #0d1e2d;
 }
 
+.owl-nav {
+  position: absolute;
+  top: 50%;
+  left: 0;
+}
+
 .social a span {
   display: inline-block;
   left: 50%;
   position: absolute;
   top: 50%;
   transform: translate(-50%, -50%);
+  font-size: 25px ;
 }
 
 .social a:hover {
   color: #000;
+}
+
+#menu-principal a {
+  margin-left: 20px;
+  font-size: 18px;
+  color: black;
+  transition: 0.2s all;
+}
+
+#menu-principal a:hover {
+  color: #cbd3da;
+  text-decoration: none;
+}
+
+#slider div {
+  width: 100%;
+}
+
+#slider img {
+  max-width: 100%;
+  height: 500px;
+}
+
+.rounded-image {
+  border-radius: 100%; height: 250px; width: 250px;
+}
+
+.back-to-top {
+  position: fixed;
+  right: 30px;
+  bottom: 10px;
+  font-size: 40px;
+  background-color: black;
+  padding: 3px 13px;
+  border-radius: 100%;
+  transition: 0.1s all;
+}
+
+.back-to-top:hover {
+  color: #fff;
+  text-decoration: none;
 }
