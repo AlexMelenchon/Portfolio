@@ -13,7 +13,7 @@ html {
 }
 
 body {
-  font-family: "Inconsolata", monosapce;
+  font-family: 'Oswald', sans-serif; font-weight: 300;
   color: #0d1e2d;
 }
 
@@ -26,7 +26,7 @@ a:hover {
 }
 
 h1, h2, h3, h4, h5, h6, .font-heading {
-  font-family: "Raleway", sans-serif;
+  font-family: 'Staatliches', cursive;
 }
 
 .section {
@@ -92,6 +92,10 @@ h1, h2, h3, h4, h5, h6, .font-heading {
   visibility: hidden;
   opacity: 0;
   transition: .3s all ease-in-out;
+}
+
+.item .item-wrap.light:after {
+  background: rgba(0, 0, 0, 0.3);
 }
 
 .item .item-wrap img {
@@ -397,7 +401,7 @@ h1, h2, h3, h4, h5, h6, .font-heading {
 
 /* Custom Navbar */
 .custom-navbar {
-  padding-top: 50px;
+  padding-top: 35px;
   width: 100%;
 }
 
@@ -540,7 +544,7 @@ h1, h2, h3, h4, h5, h6, .font-heading {
 
 #slider img {
   max-width: 100%;
-  height: 500px;
+  height: 365px;
 }
 
 .rounded-image {
@@ -556,6 +560,7 @@ h1, h2, h3, h4, h5, h6, .font-heading {
   padding: 3px 13px;
   border-radius: 100%;
   transition: 0.1s all;
+  display: none;
 }
 
 .card-socials a {

@@ -7,6 +7,8 @@
 (function($) {
   "use strict";
 
+  console.log("Debug!!");
+
   var burgerMenu = function() {
     $('.burger').click(function(e) {
       $(window).scrollTop(0);
@@ -79,6 +81,22 @@
       duration: 1000,
       once: true
     });
+  });
+
+  $(window).on('scroll', function() {
+    var scrollTop = $(this).scrollTop();
+    console.log(scrollTop);
+
+    if(scrollTop == 0) 
+    {
+      //hide button
+      $('.back-to-top').fadeOut('fast');
+    } 
+    else if( $('.back-to-top').is(':hidden')) 
+    {
+       // show button
+      $('.back-to-top').fadeIn('fast');
+    }
   });
 
 })(jQuery);
