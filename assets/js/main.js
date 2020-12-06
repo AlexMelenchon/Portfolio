@@ -28,7 +28,7 @@
 
     $(window).resize(function() {
       $container.isotope({
-        columnWidth: '.col-sm-3'
+        columnWidth: '.col-sm-4'
       });
     });
 
