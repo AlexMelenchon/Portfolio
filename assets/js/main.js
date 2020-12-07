@@ -99,4 +99,8 @@
     }
   });
 
+  setTimeout(function(){ 
+    $('#spinner').fadeOut();
+  }, 1800);
+
 })(jQuery);
